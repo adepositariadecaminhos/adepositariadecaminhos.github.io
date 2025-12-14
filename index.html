@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Depositária de Caminhos</title>
+    <style>
+        /* --- CONFIGURAÇÕES GERAIS --- */
+        :root {
+            --bg-color: #f9f8f4; /* Papel velho/creme */
+            --text-color: #2a2a2a; /* Preto suave */
+            --link-color: #666; 
+            --accent-color: #800020; /* Vermelho Bordô */
+            --font-main: "Georgia", "Times New Roman", serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 680px;
+            margin: 0 auto;
+            padding-top: 40px;
+        }
+
+        /* --- CABEÇALHO (Alinhado à Esquerda) --- */
+        header {
+            margin-bottom: 70px;
+            border-bottom: 1px solid rgba(128, 0, 32, 0.1);
+            padding-bottom: 20px;
+            text-align: left; /* Título do blog e links à esquerda */
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            margin-bottom: 15px;
+            margin-top: 0;
+            letter-spacing: -0.02em;
+            color: var(--accent-color);
+        }
+
+        nav {
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            margin-right: 20px; /* Espaço entre os links */
+            text-decoration: none;
+            color: var(--link-color);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-size: 0.75rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* --- ESTILO DOS POSTS --- */
+        article {
+            margin-bottom: 100px;
+        }
+
+        /* Título do Poema (Centralizado) */
+        .post-header {
+            text-align: center; /* Centraliza data e título */
+            margin-bottom: 30px;
+        }
+
+        .post-date {
+            font-size: 0.85rem;
+            color: #999;
+            display: block;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        .post-title {
+            font-size: 1.6rem;
+            font-weight: normal;
+            margin: 0;
+            color: var(--accent-color);
+        }
+
+        /* Conteúdo do Poema (Alinhado à Esquerda) */
+        .post-content {
+            font-size: 1.15rem;
+            text-align: left; /* Garante que o texto fique à esquerda */
+        }
+
+        .verso {
+            white-space: pre-wrap;
+            margin-bottom: 25px;
+            padding-left: 5px; 
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 30px;
+            border-radius: 2px;
+            filter: sepia(20%) contrast(95%);
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            margin-top: 120px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(128, 0, 32, 0.1);
+            font-size: 0.8rem;
+            color: #aaa;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <h1>A Depositária de Caminhos</h1>
+            <nav>
+                <a href="#">Poesias</a>
+                <a href="#">Traduções</a>
+                <a href="#">Sobre</a>
+            </nav>
+        </header>
+
+        <main>
+
+            <article>
+                <div class="post-header">
+                    <span class="post-date">13 de Dezembro, 2025</span>
+                    <h2 class="post-title">O Silêncio da Página</h2>
+                </div>
+                
+                <div class="post-content">
+                    <div class="verso">
+A palavra centralizada
+é uma âncora no papel.
+Mas o verso, ah, o verso...
+este pede o canto,
+pede o início da linha,
+como quem começa uma caminhada.
+                    </div>
+                    <div class="verso">
+Aqui, no lado esquerdo,
+o coração bate.
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="post-header">
+                    <span class="post-date">10 de Dezembro, 2025</span>
+                    <h2 class="post-title">Uma nota sobre o inverno</h2>
+                </div>
+
+                <div class="post-content">
+                    <p>Escrevi estes versos pensando na chuva que não cessa.</p>
+                    
+                    <div class="verso">
+O som da água batendo
+é o metrônomo do meu sono.
+                    </div>
+
+                    <img src="https://images.unsplash.com/photo-1470790376743-29f7c156d847?auto=format&fit=crop&w=800&q=80" alt="Paisagem de inverno">
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            &copy; 2025 A Depositária de Caminhos.
+        </footer>
+
+    </div>
+
+</body>
+</html>
